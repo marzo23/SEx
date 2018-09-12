@@ -1,0 +1,44 @@
+﻿<Window x:Class="SistExpertos.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SistExpertos"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Height="53" Margin="10,10,0,0" TextWrapping="WrapWithOverflow" Text="" VerticalAlignment="Top" Width="187" Name="TxtBox_Atomo" />
+        <Button Content="Guardar" HorizontalAlignment="Left" Margin="122,68,0,0" VerticalAlignment="Top" Width="75" Name="Btn_GuardarAtomo" Click="GuardarAtomo"/>
+        
+        <TextBox HorizontalAlignment="Left" Height="78" Margin="209,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="174" Name="TxtBox_Proposicion"/>
+        <Button Content="Guardar" HorizontalAlignment="Left" Margin="411,10,0,0" VerticalAlignment="Top" Width="75" Name="Btn_GuardarProposicion" Click="GuardarProposicion"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="388,37,0,0" VerticalAlignment="Top" Height="51" Width="119" Name="Lbl_MensajeError"/>
+        
+        <DataGrid HorizontalAlignment="Left" Height="210" Margin="10,99,0,0" VerticalAlignment="Top" Width="187" Name="DtGrid_Atomos" AutoGenerateColumns="False"
+                  SelectedItem="{Binding SelectedAtom, Mode=TwoWay}">
+            <DataGrid.Columns >
+                <DataGridTextColumn Binding="{Binding Path=Id}" Width="1*" Header="Id"/>
+                <DataGridTextColumn Binding="{Binding Path=Descripcion}" Width="3*" Header="Descripcion"/>
+            </DataGrid.Columns>
+            <DataGrid.ContextMenu>
+                <ContextMenu >
+                    <MenuItem Header="Eliminar" Click="EliminarAtomo"/>
+                </ContextMenu>
+            </DataGrid.ContextMenu>
+        </DataGrid>
+
+        <DataGrid HorizontalAlignment="Left" Height="210" Margin="209,99,0,0" VerticalAlignment="Top" Width="298" Name="DtGrid_Proposiciones" AutoGenerateColumns="False"
+                  SelectedItem="{Binding SelectedProposicion, Mode=TwoWay}">
+            <DataGrid.Columns >
+                <DataGridTextColumn Binding="{Binding Path=Id}" Width="1*" Header="Id"/>
+                <DataGridTextColumn Binding="{Binding Path=Descripcion}" Width="5*" Header="Descripcion"/>
+            </DataGrid.Columns>
+            <DataGrid.ContextMenu>
+                <ContextMenu >
+                    <MenuItem Header="Eliminar" Click="EliminarProposicion"/>
+                </ContextMenu>
+            </DataGrid.ContextMenu>
+        </DataGrid>
+
+    </Grid>
+</Window>

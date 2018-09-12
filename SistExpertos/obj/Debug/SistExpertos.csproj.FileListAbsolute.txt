@@ -1,0 +1,15 @@
+C:\Users\L440\source\repos\SistExpertos\SistExpertos\bin\Debug\SistExpertos.exe.config
+C:\Users\L440\source\repos\SistExpertos\SistExpertos\bin\Debug\SistExpertos.exe
+C:\Users\L440\source\repos\SistExpertos\SistExpertos\bin\Debug\SistExpertos.pdb
+C:\Users\L440\source\repos\SistExpertos\SistExpertos\obj\Debug\SistExpertos.csprojResolveAssemblyReference.cache
+C:\Users\L440\source\repos\SistExpertos\SistExpertos\obj\Debug\MainWindow.g.cs
+C:\Users\L440\source\repos\SistExpertos\SistExpertos\obj\Debug\App.g.cs
+C:\Users\L440\source\repos\SistExpertos\SistExpertos\obj\Debug\SistExpertos_MarkupCompile.cache
+C:\Users\L440\source\repos\SistExpertos\SistExpertos\obj\Debug\SistExpertos_MarkupCompile.lref
+C:\Users\L440\source\repos\SistExpertos\SistExpertos\obj\Debug\MainWindow.baml
+C:\Users\L440\source\repos\SistExpertos\SistExpertos\obj\Debug\SistExpertos.g.resources
+C:\Users\L440\source\repos\SistExpertos\SistExpertos\obj\Debug\SistExpertos.Properties.Resources.resources
+C:\Users\L440\source\repos\SistExpertos\SistExpertos\obj\Debug\SistExpertos.csproj.GenerateResource.Cache
+C:\Users\L440\source\repos\SistExpertos\SistExpertos\obj\Debug\SistExpertos.csproj.CoreCompileInputs.cache
+C:\Users\L440\source\repos\SistExpertos\SistExpertos\obj\Debug\SistExpertos.exe
+C:\Users\L440\source\repos\SistExpertos\SistExpertos\obj\Debug\SistExpertos.pdb
