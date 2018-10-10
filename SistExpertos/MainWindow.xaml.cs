@@ -80,8 +80,27 @@ namespace SistExpertos
             this.DtGrid_Proposiciones.ItemsSource = ProposicionList;
             LoadFileData();
         }
+        
 
-        public void LoadFileData()
+        private void VerProposicion(object sender, RoutedEventArgs e)
+        {
+            string tmp = "";
+            SelectedProposicion = (Proposicion)this.DtGrid_Proposiciones.SelectedItem;
+            List<string> relaciones = File.ReadAllLines(RelacionesFile).ToList();
+            List<string> proposiciones = File.ReadAllLines(ProposicionesFile).ToList();
+            foreach (string item in relaciones)
+            {
+                string[] rel = item.Split(',');
+                if(rel[0].Equals(SelectedProposicion.Id))
+                    tmp+=AtomoList.ToList().Find(a=>a.Id.Equals(rel[1])).Descripcion+" and ";
+            }
+            tmp+=" then ";
+            string end = proposiciones.ToList().Find(p => p.Split(',')[0].Equals(SelectedProposicion.Id));
+            tmp += AtomoList.ToList().Find(a => a.Id.Equals(end.Split(',')[1])).Descripcion;
+            MessageBox.Show(tmp);
+        }
+
+            public void LoadFileData()
         {
             ProposicionList.Clear();
             AtomoList.Clear();

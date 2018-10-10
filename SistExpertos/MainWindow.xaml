@@ -36,6 +36,7 @@
             <DataGrid.ContextMenu>
                 <ContextMenu >
                     <MenuItem Header="Eliminar" Click="EliminarProposicion"/>
+                    <MenuItem Header="Ver Proposicion" Click="VerProposicion"/>
                 </ContextMenu>
             </DataGrid.ContextMenu>
         </DataGrid>
